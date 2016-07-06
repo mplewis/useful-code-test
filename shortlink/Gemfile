@@ -34,5 +34,7 @@ group :development do
   # Better error pages with a working REPL
   gem 'better_errors'
   gem 'binding_of_caller'
+  # Open emails in browser instead of sending them
+  gem 'letter_opener'
 end
 
