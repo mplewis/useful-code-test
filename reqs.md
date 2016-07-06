@@ -32,3 +32,4 @@
 
 * Add superuser flag to User class
 * Change me@example.com in navbar
+* Ensure links have the mandated fields (to_url)
