@@ -31,3 +31,4 @@
 # TODOs
 
 * Add superuser flag to User class
+* Change me@example.com in navbar
