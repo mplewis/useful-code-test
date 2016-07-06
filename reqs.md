@@ -35,3 +35,4 @@
 * Ensure links have the mandated fields (to_url)
 * Links may fail to be created if a duplicate link slug happens by change
 * Non logged in users can access /links to create a link; will cause app to crash
+* Links may be relative; not including `https://` causes the link to point to an internal site URL
