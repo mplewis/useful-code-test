@@ -4,5 +4,6 @@ Rails.application.routes.draw do
 
   root 'home#index'
   resources :links
+  get '/redirect/:slug', to: 'translator#redirect'
 
 end
