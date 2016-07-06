@@ -27,3 +27,7 @@
 * As an admin, in order to see which links are most popular, I want a dashboard of the top 10 links by clicks.
 * As an admin, in order to understand my site's performance, I want to know how long each click takes to translate.
 * As an admin, in order to understand my site's performance, I want to know how long each click takes to load the target page.
+
+# TODOs
+
+* Add superuser flag to User class
