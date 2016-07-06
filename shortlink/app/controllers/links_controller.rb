@@ -22,6 +22,8 @@ class LinksController < ApplicationController
   # POST /links
   def create
     @link = Link.new(link_params)
+    @link.user = current_user
+    @link.from_slug = random_slug
 
     if @link.save
       redirect_to @link, notice: 'Link was successfully created.'
@@ -53,6 +55,13 @@ class LinksController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def link_params
-      params[:link]
+      params.require(:link).permit(:to_url, :nickname)
+    end
+
+    # Creates a random slug of lowercase alphabetical characters, `chars` in length
+    # http://stackoverflow.com/a/88341
+    def random_slug
+      chars = 6
+      (0...chars).map { ('a'..'z').to_a[rand(26)] }.join
     end
 end

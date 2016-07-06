@@ -9,7 +9,17 @@
       <% end %>
       </ul>
     </div>
+
   <% end %>
+
+  <p>
+    <%= label_tag :nickname, 'Nickname' %>
+    <%= f.text_field :nickname %>
+  </p>
+  <p>
+    <%= label_tag :to_url, 'Destination URL' %>
+    <%= f.text_field :to_url %>
+  </p>
 
   <div class="actions">
     <%= f.submit %>

@@ -33,3 +33,4 @@
 * Add superuser flag to User class
 * Change me@example.com in navbar
 * Ensure links have the mandated fields (to_url)
+* Links may fail to be created if a duplicate link slug happens by change
