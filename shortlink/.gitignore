@@ -39,3 +39,7 @@ bower.json
 .powenv
 
 # Ignore Byebug command history file.
+
+# Ignore pid(.lock) files
+*.pid
+*.pid.lock
