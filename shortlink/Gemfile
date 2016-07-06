@@ -3,23 +3,30 @@ source 'https://rubygems.org'
 # Specify Ruby version for deployment
 ruby '2.3.1'
 
+# Core server stuff
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.6'
 # Use Postgres as the database for Active Record
 gem 'pg'
+# Use Passenger as the Rails web server
+gem 'passenger', '>= 5.0.25', require: 'phusion_passenger/rack_handler'
+
+# Frontend
+
+# Use jquery as the JavaScript library
+gem 'jquery-rails'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 
-# Use jquery as the JavaScript library
-gem 'jquery-rails'
+# Backend
 
 # Use ActiveModel has_secure_password
 gem 'bcrypt', '~> 3.1.7'
 
 # TODO: Add Devise
-# TODO: Use Passenger instead of WEBrick
 # TODO: Add better_errors and binding_in_context
 
 group :development do
